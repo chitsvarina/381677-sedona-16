@@ -21,39 +21,57 @@
     <a class="main-header__show-nav-btn visually-hidden" href="#">Показать меню</a>
   </header>
   <main>
+    <div class="welcome-pic-inner">
+      <svg class="welcome-pic-inner__logo"></svg>
+    </div>
     <h1 class="main-title">Фото и видео</h1>
     <p class="main-slogan">Не можете решиться на путешествие из-за курса? Фотографии помогу вам забыть о политике и экономике.</p>
     <ul class="photo-gallery">
-      <li class="photo-gallery_vast">
-        <h2 class="photo-gallery_title">Неродные просторы</h2>
-        <p class="photo-gallery_author">Автор фото: Борис</p>
-        <a href="#" class="photo-gallery_like-btn" aria-label="Проголосовать за фото"></a>
-        <p class="photo-gallery_like-count">1350</p>
+      <li class="photo-gallery">
+        <img class="photo-gallery__img" src="http://placehold.it/280x280" alt="Неродные просторы">
+        <h2 class="photo-gallery__title">Неродные просторы</h2>
+        <p class="photo-gallery__author">Автор фото: Борис</p>
+        <a href="#" class="photo-gallery__like-btn" aria-label="Проголосовать за фото"></a>
+        <p class="photo-gallery__like-count">1350</p>
       </li>
-      <li class="photo-gallery_flora">
-        <h2 class="photo-gallery_title">Местная растительность</h2>
-        <p class="photo-gallery_author">Автор фото: Сергей</p>
-        <a href="#" class="photo-gallery_like-btn" aria-label="Проголосовать за фото"></a>
-        <p class="photo-gallery_like-count">143</p>
+      <li class="photo-gallery">
+        <img class="photo-gallery__img" src="http://placehold.it/280x280" alt="Местная растительность">
+        <h2 class="photo-gallery__title">Местная растительность</h2>
+        <p class="photo-gallery__author">Автор фото: Сергей</p>
+        <a href="#" class="photo-gallery__like-btn" aria-label="Проголосовать за фото"></a>
+        <p class="photo-gallery__like-count">143</p>
       </li>
-      <li class="photo-gallery_road">
-        <h2 class="photo-gallery_title">Дорога на север</h2>
-        <p class="photo-gallery_author">Автор фото: Петр</p>
-        <a href="#" class="photo-gallery_like-btn" aria-label="Проголосовать за фото"></a>
-        <p class="photo-gallery_like-count">96</p>
+      <li class="photo-gallery">
+        <img class="photo-gallery__img" src="http://placehold.it/280x280" alt="Дорога на север">
+        <h2 class="photo-gallery__title">Дорога на север</h2>
+        <p class="photo-gallery__author">Автор фото: Петр</p>
+        <a href="#" class="photo-gallery__like-btn" aria-label="Проголосовать за фото"></a>
+        <p class="photo-gallery__like-count">96</p>
       </li>
-      <li class="photo-gallery_bridge">
-        <h2 class="photo-gallery_title">Мост Дьявола</h2>
-        <p class="photo-gallery_author">Автор фото: Антон</p>
-        <a href="#" class="photo-gallery_like-btn" aria-label="Проголосовать за фото"></a>
-        <p class="photo-gallery_like-count">254</p>
+      <li class="photo-gallery">
+        <img class="photo-gallery__img" src="http://placehold.it/280x280" alt="Мост Дьявола">
+        <h2 class="photo-gallery__title">Мост Дьявола</h2>
+        <p class="photo-gallery__author">Автор фото: Антон</p>
+        <a href="#" class="photo-gallery__like-btn" aria-label="Проголосовать за фото"></a>
+        <p class="photo-gallery__like-count">254</p>
       </li>
     </ul>
     <section class="video">
       <h2 class="visually-hidden">Видеопрезентация о достопримечательностях Седоны</h2>
       <p class="video__title">Все еще сомневаетесь?</p>
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали еще раз!</p>
-      <video src="#" width="321" height="201"></video>
+      <img src="http://placehold.it/321x201" alt="Видеопрезентация о достопримечательностях Седоны">
+      <div class="video-controls">
+        <div class="video-controls__slider-bar">
+          <div class="video-controls__slider"></div>
+          <div class="video-controls__slider-thumb"></div>
+        </div>
+        <div class="video-controls__buttons">
+          <button class="video-controls__replay-btn visually-hidden">Воспроизвести еще раз</button>
+          <button class="video-controls__subtitles-btn visually-hidden">Добавить субтитры</button>
+          <button class="video-controls__fullscreen-btn visually-hidden">На весь экран</button>
+        </div>
+      </div>
     </section>
   </main>
   <footer>

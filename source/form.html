@@ -21,38 +21,42 @@
     <a class="main-header__show-nav-btn visually-hidden" href="#">Показать меню</a>
   </header>
   <main>
+    <div class="welcome-pic-inner">
+      <svg class="welcome-pic-inner__logo"></svg>
+    </div>
     <h1 class="main-title">Оставьте свой отзыв</h1>
     <p class="main-slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     <form class="form">
-      <fieldset class="form__fullname">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Представьтесь:</legend>
-        <label for="form__name">Имя*:</label><input type="text" id="form__name" placeholder="Петр" required>
-        <label for="form__surname">Фамилия*:</label><input type="text" id="form__surname" placeholder="Иванов" required>
-        <label for="form__patronymic">Отчество:</label><input type="text" id="form__patronymic" placeholder="Александрович">
+        <p class="form__field-group"><label class="form__label-type1" for="field-name">Имя*:</label><input type="text" class="form__field" id="field-name" placeholder="Петр" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-surname">Фамилия*:</label><input type="text" class="form__field" id="field-surname" placeholder="Иванов" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-patronymic">Отчество:</label><input type="text" class="form__field" id="field-patronymic" placeholder="Александрович"></p>
       </fieldset>
-      <fieldset class="form__contacts">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Контактная информация:</legend>
-        <label for="form__phone">Контактный телефон*:</label><input type="tel"  id="form__phone" placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-        <label for="form__email">Электронная почта*:</label><input type="email" id="form__email" placeholder="Введите e-mail" required>
+        <p class="form__field-group"><label class="form__label-type1" for="field-phone">Контактный телефон*:</label><input type="tel" class="form__field form__field--phone" id="field-phone" placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-email">Электронная почта*:</label><input type="email" class="form__field form__field--email" id="field-email" placeholder="Введите e-mail" required></p>
       </fieldset>
-      <fieldset class="form__assessment">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Ваше общее впечатление:</legend>
-        <label for="form__high-score">Скорее положительное</label><input type="radio" id="form__high-score" checked>
-        <label for="form__low-score">Скорее отрицательное</label><input type="radio" id="form__low-score">
-        <label for="form__no-score">Затрудняюсь ответить</label><input type="radio" id="form__no-score">
+        <p class="form__field-group"><label class="form__label-type2" for="radio-high-score">Скорее положительное</label><input class="form__radio" type="radio" id="radio-high-score" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="radio-low-score">Скорее отрицательное</label><input class="form__radio" type="radio" id="radio-low-score"></p>
+        <p class="form__field-group"><label class="form__label-type2" for="radio-no-score">Затрудняюсь ответить</label><input class="form__radio" type="radio" id="radio-no-score"></p>
       </fieldset>
-      <fieldset class="form__place">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Посещенные достопримечательности:</legend>
-        <label for="form__bridge">Мост Дьявола</label><input type="checkbox" id="form__bridge" checked>
-        <label for="form__mountain">Гора-Колокол</label><input type="checkbox" id="form__mountain" checked>
-        <label for="form__park">Слайд-парк</label><input type="checkbox" id="form__park" checked>
-        <label for="form__rocks">Красные скалы</label><input type="checkbox" id="form__rocks">
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-bridge">Мост Дьявола</label><input type="checkbox" class="form__cbx" id="cbx-bridge" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-mountain">Гора-Колокол</label><input type="checkbox" class="form__cbx" id="cbx-mountain" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-park">Слайд-парк</label><input type="checkbox" class="form__cbx" id="cbx-park" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-rocks">Красные скалы</label><input type="checkbox" class="form__cbx" id="cbx-rocks"></p>
       </fieldset>
-      <fieldset class="form__feedback">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Опишите свои эмоции:</legend>
-        <textarea class="form__guest-feedback" rows="20" placeholder="Опишите подробно все свои восторги"></textarea>
+        <label class="visually-hidden" for="form__guest-feedback">Опишите подробно все свои восторги</label>
+        <textarea class="form__guest-feedback" rows="20" id="form__guest-feedback" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="form__send-btn">Отправить отзыв</button>
+      <button class="form__send-btn" type="submit">Отправить отзыв</button>
     </form>
   </main>
   <footer>
