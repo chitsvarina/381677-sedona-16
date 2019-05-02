@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Седона - форма отзыва</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Форма отзыва</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      </ul>
+      <button class="main-nav__close-btn visually-hidden">Скрыть меню</button>
+    </nav>
+    <a><img class="main-header__logo" src="http://placehold.it/102x83" alt="Логотип города Седона"></a>
+    <a class="main-header__show-nav-btn visually-hidden" href="#">Показать меню</a>
+  </header>
+  <main>
+    <div class="welcome-pic-inner">
+      <svg class="welcome-pic-inner__logo"></svg>
+    </div>
+    <h1 class="main-title">Оставьте свой отзыв</h1>
+    <p class="main-slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <form class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Представьтесь:</legend>
+        <p class="form__field-group"><label class="form__label-type1" for="field-name">Имя*:</label><input type="text" class="form__field" id="field-name" placeholder="Петр" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-surname">Фамилия*:</label><input type="text" class="form__field" id="field-surname" placeholder="Иванов" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-patronymic">Отчество:</label><input type="text" class="form__field" id="field-patronymic" placeholder="Александрович"></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Контактная информация:</legend>
+        <p class="form__field-group"><label class="form__label-type1" for="field-phone">Контактный телефон*:</label><input type="tel" class="form__field form__field--phone" id="field-phone" placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+        <p class="form__field-group"><label class="form__label-type1" for="field-email">Электронная почта*:</label><input type="email" class="form__field form__field--email" id="field-email" placeholder="Введите e-mail" required></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Ваше общее впечатление:</legend>
+        <p class="form__field-group"><label class="form__label-type2" for="radio-high-score">Скорее положительное</label><input class="form__radio" type="radio" id="radio-high-score" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="radio-low-score">Скорее отрицательное</label><input class="form__radio" type="radio" id="radio-low-score"></p>
+        <p class="form__field-group"><label class="form__label-type2" for="radio-no-score">Затрудняюсь ответить</label><input class="form__radio" type="radio" id="radio-no-score"></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Посещенные достопримечательности:</legend>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-bridge">Мост Дьявола</label><input type="checkbox" class="form__cbx" id="cbx-bridge" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-mountain">Гора-Колокол</label><input type="checkbox" class="form__cbx" id="cbx-mountain" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-park">Слайд-парк</label><input type="checkbox" class="form__cbx" id="cbx-park" checked></p>
+        <p class="form__field-group"><label class="form__label-type2" for="cbx-rocks">Красные скалы</label><input type="checkbox" class="form__cbx" id="cbx-rocks"></p>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Опишите свои эмоции:</legend>
+        <label class="visually-hidden" for="form__guest-feedback">Опишите подробно все свои восторги</label>
+        <textarea class="form__guest-feedback" rows="20" id="form__guest-feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="form__send-btn" type="submit">Отправить отзыв</button>
+    </form>
+  </main>
+  <footer>
+    <p class="sedona-hashtag">#visitsedona</p>
+    <ul class="social">
+      <li class="social__link twitter"><a href="#" aria-label="Седона для туристов в Твиттере"></a></li>
+      <li class="social__link facebook"><a href="#" aria-label="Седона для туристов на Фейсбуке"></a></li>
+      <li class="social__link youtube"><a href="#" aria-label="Седона для туристов на Ютубе"></a></li>
+    </ul>
+    <div class="copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" alt="Логотип HtmlAcademy"></a>
+    </div>
+  </footer>
+</body>
+</html>
